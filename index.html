@@ -1,0 +1,179 @@
+<!doctype html>
+<html class="no-js" lang="zh">
+
+
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>xenia</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/icon.png">
+
+	<!-- Google font (font-family: 'Dosis', sans-serif;) -->
+	<link href="https://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700" rel="stylesheet">
+	
+	<!-- Plugins -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/plugins.css">
+
+	<!-- Style Css -->
+	<link rel="stylesheet" href="style.css">
+
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="css/custom.css">
+</head>
+	<!-- Js Files -->
+	<script src="js/vendor/modernizr-3.6.0.min.js"></script>
+	<script src="js/vendor/jquery-3.3.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/plugins.js"></script>
+	<script src="js/main.js"></script>
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="js/portfolio-list.js"></script>
+		<script type="text/javascript">
+			$(function(){
+			const portfolioIndexList = portfolioList.slice(0,9)
+			for(var i = 0;i<portfolioIndexList.length;i++){
+				$('.portfolios-list-content').append(
+					"<div class='col-lg-4 col-md-6 col-12 portfolio-item "+portfolioIndexList[i].category+"'><a href='portfolio-detail.html?id="+i+"'><div class='portfolio'><div class='portfolio-image'><img src='"+portfolioIndexList[i].img+"' alt='portfolio image'></div><div class='portfolio-content'> <h5>"+portfolioIndexList[i].title+"</h5><h6>"+portfolioIndexList[i].type+"</h6></div></div></a></div>"
+
+				)
+			}
+			
+		})
+		</script>
+<body>
+	<!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+	<!-- Add your site or application content here -->
+
+	<!-- Wrapper -->
+	<div id="wrapper" class="wrapper">
+		
+		<span class="cursor"></span>
+
+		<!-- Header -->
+		<header class="header sticky-header fixed-header">
+			<div class="container">
+				<div class="header-inner d-none d-lg-flex">
+					<div class="header-logo">
+						<a href="index.html">
+							<img src="img/logo/logo.svg" alt="logo" height="20px">
+						</a>
+					</div>
+					<div class="header-navigation">
+						<button class="header-navigation-trigger is-active">
+							<span></span>
+							<span></span>
+							<span></span>
+						</button>
+						<nav class="main-navigation is-visible">
+							<ul>
+                                <li><a href="index.html">主页</a>
+                                </li>
+								<li><a href="about.html">关于我</a></li>
+                                <li><a href="portfolio.html">作品集</a> 
+                               <!-- o09 -->
+                                </li> 
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<div class="mobile-menu-wrapper d-block d-lg-none">
+					<div class="mobile-menu clearfix">
+						<a href="index.html" class="mobile-logo">
+							<img src="img/logo/logo.svg" alt="mobile logo" height="20px"> 
+						</a>
+					</div>
+				</div>
+			</div>
+		</header> 
+		<!-- Hero Area -->
+		<div class="hero-area bg-white">
+			<div class="container">
+				<div class="hero-area-inner">
+					<div class="hero-area-text">
+						<h1>
+							我是个<br>
+							会点代码的设计师
+						</h1>
+						<h6>目前正在求职中，欢迎来勾搭......</h6>
+						<a href="about.html" class="readmore">了解更多</a>
+					</div>
+					<div class="hero-area-image">
+						<img src="img/slider/slider-image-1.png">
+					</div>
+					 
+				</div>
+			</div>
+		</div>
+		<!--// Hero Area -->
+
+		<!-- Page Conttent -->
+		<main class="page-content">
+
+			<!-- Portfolios Ara -->
+			<div class="cr-section portfolios-area section-padding-lg bg-white">
+				<div class="container">
+
+					<div class="portfolio-filters text-center">
+							<button data-filter="*" class="is-checked">全部</button>
+						<button data-filter=".portfolio-filter-app">APP界面设计</button>
+						<button data-filter=".portfolio-filter-web">WEB网页设计</button>
+						<button data-filter=".portfolio-filter-vi">VI视觉设计</button>
+					</div>
+
+					<div class="row portfolios-wrapper portfolios-zoom-button-holder portfolios-list-content">
+						
+						<!-- Single Portfolio -->
+						
+
+					</div>
+				</div>
+				 <div class="row">
+                        <div class="col-12 text-center mt-5">
+                            <a href="portfolio.html" class="button" data-content="查看更多">
+                                <span>查看更多</span>
+                            </a>
+                        </div>
+                    </div>
+			</div>
+			<!--// Portfolios Ara -->
+
+			 
+
+
+		</main>
+		<!--// Page Conttent -->
+
+		<!-- Footer Area -->
+		<footer class="footer-area bg-white">
+			<div class="container">
+				<ul class="footer-inner">
+					<li>现居城市 <br>杭州</li>
+					<li><a href="tel://+86 15757181015">+86 15757181015</a></li>
+					<li><a href="mailto://15757181015@163.com">15757181015@163.com</a></li>
+					<li>Copyright © 2018 <a href="http://www.xenia530.com/" target="_blank" title="xenia530">xenia530.com</a></li>
+				</ul>
+			</div>
+		</footer>
+		<!--// Footer Area -->
+
+	</div>
+	<!--// Wrapper -->
+
+	
+	
+</body>
+
+
+
+</html>
